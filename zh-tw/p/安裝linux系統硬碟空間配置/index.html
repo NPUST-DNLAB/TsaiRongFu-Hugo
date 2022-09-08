@@ -8,18 +8,18 @@ swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置�
 安裝啟動引導器的設備 如果要用Ubuntu的引導器代替Windows的引導器，就選 /dev/sda。
 如果要保留Windows的引導器，就選 /boot分區。'><title>安裝Linux系統硬碟空間配置</title>
 
-<link rel='canonical' href='https://tsairongfu.github.io/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/'>
+<link rel='canonical' href='https://npust-dnlab.github.io/TsaiRongFu-Hugo/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/'>
 
-<link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='安裝Linux系統硬碟空間配置'>
+<link rel="stylesheet" href="/TsaiRongFu-Hugo/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='安裝Linux系統硬碟空間配置'>
 <meta property='og:description' content='/boot 1.選擇空閒區，點擊“&#43;”號添加引導分區： 大小：400MB 新分區的類型：主分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/boot
 swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置為實際內存的2倍： 大小：8192MB(4GB×2) 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：交換空間
 / 3.繼續選擇空閒區，點擊“&#43;”號添加root分區： 大小：至少10-20GB 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/
 /home 4.繼續選擇空閒區，點擊“&#43;”號添加home分區： 大小：餘下所有的空間 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/home
 安裝啟動引導器的設備 如果要用Ubuntu的引導器代替Windows的引導器，就選 /dev/sda。
 如果要保留Windows的引導器，就選 /boot分區。'>
-<meta property='og:url' content='https://tsairongfu.github.io/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/'>
+<meta property='og:url' content='https://npust-dnlab.github.io/TsaiRongFu-Hugo/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/'>
 <meta property='og:site_name' content='Tsaiの南極洲'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='System' /><meta property='article:tag' content='config' /><meta property='article:tag' content='Disk' /><meta property='article:published_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://tsairongfu.github.io/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='System' /><meta property='article:tag' content='config' /><meta property='article:tag' content='Disk' /><meta property='article:published_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://npust-dnlab.github.io/TsaiRongFu-Hugo/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg' />
 <meta name="twitter:title" content="安裝Linux系統硬碟空間配置">
 <meta name="twitter:description" content="/boot 1.選擇空閒區，點擊“&#43;”號添加引導分區： 大小：400MB 新分區的類型：主分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/boot
 swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置為實際內存的2倍： 大小：8192MB(4GB×2) 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：交換空間
@@ -27,7 +27,7 @@ swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置�
 /home 4.繼續選擇空閒區，點擊“&#43;”號添加home分區： 大小：餘下所有的空間 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/home
 安裝啟動引導器的設備 如果要用Ubuntu的引導器代替Windows的引導器，就選 /dev/sda。
 如果要保留Windows的引導器，就選 /boot分區。"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://tsairongfu.github.io/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg' />
+    <meta name="twitter:image" content='https://npust-dnlab.github.io/TsaiRongFu-Hugo/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg' />
     <link rel="shortcut icon" href="/images/TW-Penguin.png" />
 
     </head>
@@ -67,13 +67,13 @@ swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置�
         
             
             <figure class="site-avatar">
-                <a href="/zh-tw">
+                <a href="/TsaiRongFu-Hugo/zh-tw">
                 
                     
                     
                     
                         
-                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box.gif" width="1200"
+                        <img src="/TsaiRongFu-Hugo/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box.gif" width="1200"
                             height="1250" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -84,7 +84,7 @@ swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置�
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/zh-tw">Tsaiの南極洲</a></h1>
+            <h1 class="site-name"><a href="/TsaiRongFu-Hugo/zh-tw">Tsaiの南極洲</a></h1>
             <h2 class="site-description">No Pain No Gain</h2>
         </div>
     </header><ol class="social-menu">
@@ -241,7 +241,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
 
         <li >
-            <a href='/zh-tw/' >
+            <a href='/zh-tw/TsaiRongFu-Hugo/zh-tw/' >
                 
                 
                 
@@ -262,7 +262,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
 
         <li >
-            <a href='/zh-tw/%E6%96%87%E7%AB%A0/' >
+            <a href='/zh-tw/TsaiRongFu-Hugo/zh-tw/%E6%96%87%E7%AB%A0/' >
                 
                 
                 
@@ -277,7 +277,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
 
         <li >
-            <a href='/zh-tw/%E9%97%9C%E6%96%BC/' >
+            <a href='/zh-tw/TsaiRongFu-Hugo/zh-tw/%E9%97%9C%E6%96%BC/' >
                 
                 
                 
@@ -297,7 +297,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
 
         <li >
-            <a href='/zh-tw/%E6%90%9C%E5%B0%8B/' >
+            <a href='/zh-tw/TsaiRongFu-Hugo/zh-tw/%E6%90%9C%E5%B0%8B/' >
                 
                 
                 
@@ -317,7 +317,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
 
         <li >
-            <a href='/zh-tw/%E9%80%A3%E7%B5%90/' >
+            <a href='/zh-tw/TsaiRongFu-Hugo/zh-tw/%E9%80%A3%E7%B5%90/' >
                 
                 
                 
@@ -350,9 +350,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         
-                            <option value="https://tsairongfu.github.io/zh-tw/" selected>繁體中文</option>
+                            <option value="https://npust-dnlab.github.io/TsaiRongFu-Hugo/zh-tw/" selected>繁體中文</option>
                         
-                            <option value="https://tsairongfu.github.io/" >English</option>
+                            <option value="https://npust-dnlab.github.io/TsaiRongFu-Hugo/" >English</option>
                         
                     </select>
                 </li>
@@ -386,9 +386,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/">
-                <img src="/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture_huebbfad1edfa8e198fe68a27ac6a615ca_163673_800x0_resize_q75_box.jpg"
-                        srcset="/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture_huebbfad1edfa8e198fe68a27ac6a615ca_163673_800x0_resize_q75_box.jpg 800w, /zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture_huebbfad1edfa8e198fe68a27ac6a615ca_163673_1600x0_resize_q75_box.jpg 1600w"
+            <a href="/TsaiRongFu-Hugo/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/">
+                <img src="/TsaiRongFu-Hugo/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture_huebbfad1edfa8e198fe68a27ac6a615ca_163673_800x0_resize_q75_box.jpg"
+                        srcset="/TsaiRongFu-Hugo/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture_huebbfad1edfa8e198fe68a27ac6a615ca_163673_800x0_resize_q75_box.jpg 800w, /TsaiRongFu-Hugo/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture_huebbfad1edfa8e198fe68a27ac6a615ca_163673_1600x0_resize_q75_box.jpg 1600w"
                         width="800" 
                         height="450" 
                         loading="lazy"
@@ -402,7 +402,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     
     <header class="article-category">
         
-            <a href="/zh-tw/categories/linux/" >
+            <a href="/TsaiRongFu-Hugo/zh-tw/categories/linux/" >
                 Linux
             </a>
         
@@ -411,7 +411,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/">安裝Linux系統硬碟空間配置</a>
+            <a href="/TsaiRongFu-Hugo/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/">安裝Linux系統硬碟空間配置</a>
         </h2>
     
         
@@ -467,7 +467,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
             <div>
                 
-                    <a href="https://tsairongfu.github.io/p/install-linux-system-hard-disk-space-configuration/" class="link">English</a>
+                    <a href="https://npust-dnlab.github.io/TsaiRongFu-Hugo/p/install-linux-system-hard-disk-space-configuration/" class="link">English</a>
                 
             </div>
         </footer>
@@ -534,13 +534,13 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     
     <section class="article-tags">
         
-            <a href="/zh-tw/tags/linux/">Linux</a>
+            <a href="/TsaiRongFu-Hugo/zh-tw/tags/linux/">Linux</a>
         
-            <a href="/zh-tw/tags/system/">System</a>
+            <a href="/TsaiRongFu-Hugo/zh-tw/tags/system/">System</a>
         
-            <a href="/zh-tw/tags/config/">config</a>
+            <a href="/TsaiRongFu-Hugo/zh-tw/tags/config/">config</a>
         
-            <a href="/zh-tw/tags/disk/">Disk</a>
+            <a href="/TsaiRongFu-Hugo/zh-tw/tags/disk/">Disk</a>
         
     </section>
 
@@ -574,11 +574,11 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
             
                 
 <article class="has-image">
-    <a href="/zh-tw/p/linux-server-raid%E9%85%8D%E7%BD%AE/">
+    <a href="/TsaiRongFu-Hugo/zh-tw/p/linux-server-raid%E9%85%8D%E7%BD%AE/">
         
         
             <div class="article-image">
-                <img src="/zh-tw/p/linux-server-raid%E9%85%8D%E7%BD%AE/picture.416167b9ca74459d0d869bd41c6b209a_huebbfad1edfa8e198fe68a27ac6a615ca_715200_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/TsaiRongFu-Hugo/zh-tw/p/linux-server-raid%E9%85%8D%E7%BD%AE/picture.416167b9ca74459d0d869bd41c6b209a_huebbfad1edfa8e198fe68a27ac6a615ca_715200_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -598,11 +598,11 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
             
                 
 <article class="has-image">
-    <a href="/zh-tw/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/">
+    <a href="/TsaiRongFu-Hugo/zh-tw/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/">
         
         
             <div class="article-image">
-                <img src="/zh-tw/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/picture.168417cce3258d4434ab7bb40953b7bb_hua47ebcf390252262e5e2b6d13ea463b9_495265_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/TsaiRongFu-Hugo/zh-tw/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/picture.168417cce3258d4434ab7bb40953b7bb_hua47ebcf390252262e5e2b6d13ea463b9_495265_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -622,11 +622,11 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
             
                 
 <article class="has-image">
-    <a href="/zh-tw/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/">
+    <a href="/TsaiRongFu-Hugo/zh-tw/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/">
         
         
             <div class="article-image">
-                <img src="/zh-tw/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/picture.b95a26b743800cab7d8a0442f6ff9073_hu0a9358055f97e0edd86e8e2b255aab49_965609_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/TsaiRongFu-Hugo/zh-tw/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/picture.b95a26b743800cab7d8a0442f6ff9073_hu0a9358055f97e0edd86e8e2b255aab49_965609_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -830,7 +830,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/TsaiRongFu-Hugo/ts/main.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
