@@ -1,1 +1,1 @@
-[![TsaiRongFu.github.io](https://github.com/TsaiRongFu/TsaiRongFu.github.io/blob/main/Click.png)](https://tsairongfu.github.io/)
+[![NPUST-DNLAB/TsaiRongFu.github.io](https://github.com/NPUST-DNLAB/TsaiRongFu-Hugo/blob/main/Click.png)](https://npust-dnlab.github.io/TsaiRongFu-Hugo/)
